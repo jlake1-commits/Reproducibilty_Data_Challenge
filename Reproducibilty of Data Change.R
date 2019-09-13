@@ -44,12 +44,7 @@ spider_plot <- ggplot(cdat, aes(x=cdat$k_number_of_arthropods, y=p_normspider)) 
   geom_point(data=cdat, aes(x=cdat$k_number_of_arthropods, y=p_dLGP_spider),colour='red', shape=0, size = 3)
 spider_plot
 
-
-
-
 ## Sowbugs
-
-
 
 #Determine and set the number of boards, count the sowbugs, and get mean of sowbugs per board
 cdat$nsowbugs <- cdat$k_number_of_arthropods * cdat$C_count_of_boards_with_k_sowbugs
